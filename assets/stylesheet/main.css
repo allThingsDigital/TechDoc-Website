@@ -1,0 +1,576 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*
+  ========================================
+  Custom Style
+  ========================================
+*/
+*{
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Lato', sans-serif;
+}
+hr
+{
+  width: 70px;
+  margin: 30px 0px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.cont1,
+.primary-nav ul
+{
+  display: flex;
+}
+.cont1,
+.logo img
+{
+  width: 100%;
+}
+/* .cont1, .primary-nav, .primary-nav ul,
+.phn, p, a, section, .catalogue, .help,
+.testimonial
+{
+  box-sizing: border-box;
+} */
+
+.cont1
+{
+  
+  justify-content: space-around;
+  position: fixed;
+  background: rgba(21,21,21,0.7);
+  top: 0;
+  padding: 32px 0;
+}
+
+.logo
+{
+  width: 219px;
+  height: 48px;
+}
+
+.primary-nav,
+.phn
+{
+  padding-top:15px;
+}
+.primary-nav
+{
+  width: 435px;
+}
+
+.primary-nav ul
+{
+ justify-content: space-between;
+ 
+ list-style-type: none;
+}
+
+.primary-nav ul a:hover
+{
+  border-bottom: 4px solid #21BA5E;
+}
+
+.phn_i
+{
+  color: #21BA5E;
+  margin-right: 10px;
+}
+
+.phn a,
+.cat_txt p
+{
+  font-size: 17px;
+}
+.phn a:hover
+{
+  color: #21BA5E;
+}
+a
+{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h2
+{
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: -0.03em;
+}
+.cat_txt p,
+.cont3_bx p
+{
+  color: rgba(21, 21, 21, 0.8);
+  font-weight: 300;
+  text-align: center;
+}
+h5
+{
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: .1em;
+  font-weight: 700;
+  padding-left: 20px;
+}
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+.hero
+{
+  background-image: url(./bg-bunner-1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-top: 200px;
+  padding-left: 150px;
+}
+
+.hero-bx
+{
+  width:570px;
+}
+
+h1
+{
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero p
+{
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.btn
+{
+  text-align: center;
+  display: inline-block;
+  padding: 21px 46px;
+  background-color: #21BA5E;
+  border-radius: 100px;
+  border: 1px solid #21BA5E;
+  cursor: pointer;
+  margin-top: 58px;
+}
+
+.btn:hover
+{
+  background-color: #151515;
+  border-color: #151515;
+}
+
+/*
+  ========================================
+  Catalogue
+  ========================================
+*/
+.catalogue
+{
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cat
+{
+  width: 270px;
+  text-align: center;
+}
+.cat .fas
+{
+  color: #151515;
+  font-size: 100px;
+  display: inline-block;
+}
+.cat_txt
+{
+  text-align: center;
+  margin-top: 15px 0 0 0;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.cat_txt h3
+{
+  color: #151515;
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+}
+
+.cat_txt h3:hover
+{
+  color: #21BA5E;
+}
+
+.cat_txt p
+{
+  margin-top: 22px;
+  line-height: 1.5;
+}
+
+/*
+  ========================================
+  Help
+  ========================================
+*/
+.help
+{
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)), url('./joel-rohland-MCL2xxjZJvs-unsplash.jpg');
+  height: 446px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #151515;
+  padding: 115px 0 135px;
+}
+.cont2
+{
+  width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.help p
+{
+  text-align: center;
+  font-size: 17px;
+  margin-top: 28px;
+  color: rgba(21, 21, 21, 0.8);
+}
+
+.help a
+{
+  margin-top: 28px;
+}
+
+/*
+  ========================================
+  Testimonial
+  ========================================
+*/
+.testimonial
+{
+  height: 669px;
+  padding: 100px 0px 55px;
+}
+
+.cont3,
+.cont4
+{
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+.cont3_bx
+{
+  width: 1170px;
+  padding: 75px 0px 55px 0px;;
+}
+.cont3_bx p
+{
+  width: 780px;
+  font-size: 22px;
+  font-style: italic;
+  margin: 0 auto;
+  letter-spacing: 0.03em;
+  line-height: 34px;
+  text-align: center;
+}
+.cont3_bx h4
+{
+  font-size: 24px;
+  margin-top: 28px;
+  font-weight: 700;
+  color: #303A54;
+}
+.people
+{
+  display: flex;
+  width: 340px;
+  justify-content: space-between;
+  margin: 0 auto;
+  
+}
+.people img
+{
+  border-radius: 50%;
+  display: block;
+}
+.people img:hover
+{
+  box-shadow:4px 8px 8px rgba(21, 21, 21, 0.25);
+  transition: all .3s;
+  cursor: pointer;
+}
+/*
+  ========================================
+  Repair Center
+  ========================================
+*/
+.repair_center
+{
+  height: auto;
+  padding: 100px 0 135px;
+}
+
+.repair
+{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.repair_txt p {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #303A54;
+  letter-spacing: .06em;
+}
+
+.brand
+{
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin: 45px auto -30px;
+  text-align: center;
+}
+
+.brand-bx
+{
+  width: 270px;
+  height: 119px;
+  text-align: center;
+  padding-top: 35px;
+}
+.brand-bx:first-child{
+  padding-top: 47px;
+}
+.brand-bx:last-child{
+  padding-top: 40px;
+}
+.brand-bx:hover
+{
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(21, 21, 21, 0.25);
+}
+/*
+  ========================================
+  CONTACT
+  ========================================
+*/
+.contact
+{
+  background-color: #F5F5F5;
+  height: auto;
+  padding: 100px 0px 135px;
+}
+.contact_bx
+{
+  width: 670px;
+  margin: 0 auto;
+  text-align: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+  padding-top: 54px;
+  width: 100%;
+  font-size: 15px;
+}
+input{
+  height: 60px;
+  margin-bottom: 30px;
+}
+textarea{
+  height: 163px;
+  max-width: 100%;
+  max-height: 230px;
+  min-height: 60px;
+  margin-bottom: 0px;
+}
+input,
+textarea{
+  display: block;
+  padding: 16px 25px;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+  outline: none;
+}
+.contact_bx a
+{
+  margin-top: -1px;
+}
+
+/*
+  ========================================
+  FOOTER
+  ========================================
+*/
+footer
+{
+  background: #37383E;
+  padding: 130px 0 130px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.cont4
+{
+  display: flex;
+  justify-content: space-between;
+}
+.row
+{
+  width: 330px;
+}
+.row p
+{
+  font-size: 17px;
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .01em;
+  margin-top: 30px;
+}
+._row
+{
+  width:735px;
+}
+._row input
+{
+  margin: 5px 5px 0px 0px;
+  display: inline-block;
+  width: 500px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #fff;
+}
+.col 
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.col p
+{
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  font-weight: 300;
+  text-align: left;
+  letter-spacing: .01em;
+  line-height: 1.47059;
+  padding-left: 20px;
+}
+.fix
+{
+  margin-top: 30px!important;
+}
+.col p:hover
+{
+  color: #21BA5E;
+  cursor: pointer;
+}
+.icon{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.icon .fab{
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.icon .fab:hover
+{
+  background: #21BA5E;
+  color: #303A54;
+  cursor: pointer;
+}
